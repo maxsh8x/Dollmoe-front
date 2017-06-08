@@ -1,0 +1,38 @@
+{
+  "name": "Dollmoe-front",
+  "version": "0.0.1",
+  "main": "index.js",
+  "repository": "https://github.com/maxsh8x/Dollmoe-front",
+  "author": "<neko@protonmail.ch>",
+  "scripts": {
+    "build": "webpack --config=webpack.min.config.js",
+    "dev": "webpack-dev-server"
+  },
+  "devDependencies": {
+    "babel": "^6.23.0",
+    "babel-core": "^6.24.1",
+    "babel-eslint": "^7.2.3",
+    "babel-loader": "^7.0.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1",
+    "eslint": "^3.19.0",
+    "eslint-config-airbnb": "^14.1.0",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-jsx-a11y": "^4.0.0",
+    "eslint-plugin-react": "^6.10.3",
+    "json-loader": "^0.5.4",
+    "react-hot-loader": "3.0.0-beta.6",
+    "webpack": "^2.5.1",
+    "webpack-dev-server": "^2.4.5"
+  },
+  "dependencies": {
+    "axios": "^0.16.1",
+    "prop-types": "^15.5.8",
+    "react": "^15.5.4",
+    "react-dom": "^15.5.4",
+    "react-router": "^4.1.1",
+    "react-router-dom": "^4.1.1",
+    "shortid": "^2.2.8"
+  }
+}

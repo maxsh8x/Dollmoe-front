@@ -1,0 +1,6 @@
+npm-debug.log
+dist/bundle.js
+.vscode
+node_modules
+config.json
+.DS_Store

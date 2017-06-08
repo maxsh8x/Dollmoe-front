@@ -1,0 +1,90 @@
+body { 
+  margin:0;
+  background-color: #222222;
+  font-family: sans-serif;
+
+}
+
+body a {
+  text-decoration: none;
+}
+
+.top-nav {
+  display: flex;
+  justify-content: space-between; 
+}
+
+.top-nav a {
+  margin: 1em;
+  color: #4f4f4f;
+  font-weight: bold;
+  font-size: 0.8em;
+}
+
+.user-nav {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  background: #1c1c1c;
+  margin-bottom: 1em;
+}
+
+.user-nav a, span {
+  padding: 0.7em;
+  font-size: 0.8em;
+  font-weight: bold;
+  color: #4f4f4f;
+}
+
+.user-nav span > em {
+    color: yellowgreen;
+}
+
+.site-nav {
+  display: flex;  
+  justify-content: center;
+}
+
+.site-nav a {
+  padding: 0.7em;
+  margin-right: 0.2em;
+  margin-left: 0.2em;
+  flex-wrap: nowrap;
+  color: #999999;
+  background: #454545;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  background: #303030;
+  padding: 0.5em;
+  background-image: url(img/真红_副本.png);
+  background-position: right bottom;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  
+}
+
+.torrent-list {
+  background-color: #222222;
+  border-collapse: collapse;
+}
+
+.torrent-list thead {
+  background-color: #121212;
+}
+
+.torrent-list td, th {
+  border: 1px solid #303030;
+  color: #999999;
+  font-weight: bold;
+  font-size: 0.8em;
+  padding: 0.6em;
+}
+
+.torrent-list a {
+  color: #999999;
+  font-weight: bold;
+}
+
