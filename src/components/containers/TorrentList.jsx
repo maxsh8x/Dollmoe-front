@@ -38,9 +38,9 @@ class ListContainer extends React.Component {
       .then((response) => {
         const { data: newData, count } = response.data;
         const { data: oldData } = this.state;
-        oldData.concat(newData);
+        const data = oldData.concat(newData);
         this.setState({
-          oldData,
+          data,
           limit,
           offset,
           count,
@@ -53,7 +53,7 @@ class ListContainer extends React.Component {
     const windowHeight = 'innerHeight' in window ? window.innerHeight : document.documentElement.offsetHeight;
     const body = document.body;
     const html = document.documentElement;
-    const { limit, offset, sortBy, order } = this.state;
+    const { limit, offset, sortBy, order, loading } = this.state;
     const docHeight = Math.max(
       body.scrollHeight,
       body.offsetHeight,
@@ -63,12 +63,16 @@ class ListContainer extends React.Component {
     );
     const windowBottom = windowHeight + window.pageYOffset;
     if (windowBottom >= docHeight) {
-      this.getData(
-        limit,
-        offset + limit,
-        sortBy,
-        order,
-      );
+      if (!loading) {
+        this.setState({ loading: true }, () => {
+          this.getData(
+            limit,
+            offset + limit,
+            sortBy,
+            order,
+          );
+        });
+      }
     }
   }
 
