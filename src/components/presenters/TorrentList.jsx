@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import humanSize from '../../utils/humanSize';
 
 const TorrentList = props =>
   <table className="torrent-list">
@@ -22,7 +23,7 @@ const TorrentList = props =>
               <td><img alt={item.subCategory} src={`/img/torrents/${item.subCategory}.png`} /></td>
               <td>{item.name}</td>
               <td><a href={`magnet:?xt=urn:btih:${item.hash}`}>[DL]</a></td>
-              <td>{item.fileSize}</td>
+              <td>{humanSize(item.fileSize)}</td>
               <td>0</td>
               <td>0</td>
               <td>0</td>
