@@ -23,6 +23,7 @@ module.exports = {
     contentBase: resolve(__dirname, 'dist'),
     publicPath: '/',
     historyApiFallback: true,
+    disableHostCheck: true,
   },
   module: {
     rules: [
