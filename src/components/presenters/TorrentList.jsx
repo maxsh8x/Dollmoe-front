@@ -32,7 +32,7 @@ const TorrentList = props =>
         })
       }
     </tbody>
-  </table >;
+  </table>;
 
 TorrentList.propTypes = {
   data: PropTypes.arrayOf(PropTypes.object).isRequired,
