@@ -1,5 +1,6 @@
 import React from 'react';
 import TorrentList from '../presenters/TorrentList';
+import SearchWidget from '../presenters/SearchWidget';
 import fetcher from '../../utils/fetcher';
 
 class ListContainer extends React.Component {
@@ -80,6 +81,7 @@ class ListContainer extends React.Component {
     const { data } = this.state;
     return (
       <div>
+        <SearchWidget />
         <TorrentList {...{ data }} />
       </div>
     );
